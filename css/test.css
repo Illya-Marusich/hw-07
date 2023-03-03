@@ -181,9 +181,9 @@ align-items: center;
     background-color: var(--color-ocean);
 }
 
-.current {
+/* .current {
     color: var(--color-ocean);
-}
+} */
 
 .header-address {
     display: none;
@@ -200,7 +200,6 @@ align-items: center;
 .header-mail,
 .header-contact {
     color: var(--color-slate);
-    padding: 24px 0 28px 0;
 
     transition: color var(--trns-fast);
 }
@@ -223,32 +222,103 @@ align-items: center;
 .menu-mobile {
     width: 100%;
     height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .mobile-btn {
     display: flex;
-    
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    padding: 8px;
+    background: var(--color-cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
 
 .mobile-close {}
 
-.mobile-list {}
+.mobile-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 284px;
+}
 
 .mobile-item {}
 
-.mobile-link {}
+.mobile-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    letter-spacing: 0.02em;
 
-.mobile-address-list {}
+    color: var(--color-navy-blue);
+}
+
+.current {
+    color: var(--color-ocean);
+}
+
+.mobile-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    margin-bottom: 48px;
+}
 
 .mobile-item {}
 
-.mobile-address-link {}
+.mobile-contact {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    
+    letter-spacing: 0.02em;
 
-.mobile-socials-list {}
+    color: var(--color-iris);
+}
+
+.mobile.mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+}
+
+.mobile-socials-list {
+    display: flex;
+    gap: 56px;
+}
 
 .mobile-socials-item {}
 
-.mobile-socials-link {}
+.mobile-socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-iris);
+    border-radius: 50%;
+    color: var(--color-cloud);
+}
 
 /* Header Tablet */
 
@@ -281,7 +351,6 @@ align-items: center;
     .header-contact {
         font-size: 12px;
         line-height: calc(14 / 12);
-        padding: 5px 0px;
     }
     .menu-btn {
         display: none;

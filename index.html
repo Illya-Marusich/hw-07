@@ -55,24 +55,20 @@
           </ul>
         </address>
         <!--Mobile Menu -->
-        <button class="menu-btn" type="submit">
-          <img
-            class="menu-icon"
-            src="./img/icons/burger.svg"
-            alt="burger icon"
-          />
+        <button class="menu-btn" type="submit" data-mobile-open>
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./img/icons.svg#icon-burger"></use>
+          </svg>
         </button>
-        <div class="menu-mobile">
-          <button class="mobile-btn" type="submit">
-            <img
-              class="mobile-close"
-              src="./img/icons/close.svg"
-              alt="close icon"
-            />
+        <div class="menu-mobile backdrop is-hidden" data-mobile>
+          <button class="mobile-btn" type="submit" data-mobile-close>
+            <svg class="mobile-close" width="8" height="8">
+              <use href="./img/icons.svg#icon-menu-close"></use>
+            </svg>
           </button>
           <ul class="mobile-list list">
             <li class="mobile-item">
-              <a class="mobile-link link" href="./index.html">Studio</a>
+              <a class="mobile-link link current" href="./index.html">Studio</a>
             </li>
             <li class="mobile-item">
               <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
@@ -83,14 +79,12 @@
           </ul>
           <ul class="mobile-address-list list">
             <li class="mobile-item">
-              <a class="mobile-address-link link" href="tel:+110001111111"
+              <a class="mobile-contact link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
             <li class="mobile-item">
-              <a
-                class="mobile-address-link link"
-                href="mailto:info@devstudio.com"
+              <a class="mobile-mail link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
